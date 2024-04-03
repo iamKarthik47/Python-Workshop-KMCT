@@ -11,11 +11,12 @@
           href="style.css">
     <title>{% block title %}About Us{% endblock %}</title>
 </head>
-{% block content%}
+
 <body>
     
     <header>
         <nav>
+            {% block content%}
             <div class="logo">
               GeeksforGeeks
               </div>
@@ -33,6 +34,7 @@
                   Contact</a>
                   </li>
             </ul>
+            {% endblock %}
         </nav>
     </header>
     
@@ -122,6 +124,6 @@
         <p>© 2023 GeeksforGeeks. All Rights Reserved.</p>
     </footer>
 </body>
-{% endblock %}
+
  
 </html>
